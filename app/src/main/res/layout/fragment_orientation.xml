@@ -3,9 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <com.ScreenManager.mobilescreenmanager.containers.fullscreencardviewpager.FullScreenCardViewPager
-        android:id="@+id/fullScreenCardViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    
+    <TextView
+        android:id="@+id/orientation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orientation Manager"/>
 </LinearLayout>
