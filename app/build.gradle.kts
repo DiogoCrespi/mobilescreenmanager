@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.ScreenManager.mobilescreenmanager"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.ScreenManager.mobilescreenmanager"
