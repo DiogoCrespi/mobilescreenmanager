@@ -1,3 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MobileScreenManager</string>
+    <string name="app_name">Mobile Screen Manager</string>
+    <string name="orientation_manager">Gerenciador de Orientação</string>
+    <string name="info_card_title">Bem-vindo ao Gerenciador de Orientação</string>
+    <string name="info_card_description">Controle a orientação da tela do seu dispositivo de forma simples e eficiente. Configure a rotação automática ou escolha uma orientação específica.</string>
+    <string name="orientation_control_title">Controle de Orientação</string>
+    <string name="auto_rotate_label">Rotação Automática</string>
+    <string name="portrait_mode">Modo Retrato</string>
+    <string name="landscape_mode">Modo Paisagem</string>
+    <string name="apply_changes">Aplicar Alterações</string>
+    <string name="settings">Configurações</string>
+    <string name="next_card">Próximo</string>
+    <string name="previous_card">Anterior</string>
 </resources>

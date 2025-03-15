@@ -6,7 +6,8 @@
     <!-- Permissões necessárias para funcionamento da aplicação -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        android:maxSdkVersion="22" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
@@ -18,12 +19,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MobileScreenManager"
+        android:theme="@style/Theme.Material3.Light"
         tools:targetApi="31">
 
         <!-- Atividade Principal -->
         <activity
-            android:name=".MainActivity"
+            android:name=".OrientationManagerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -31,12 +32,17 @@
             </intent-filter>
         </activity>
 
+        <!-- Serviço Unificado -->
+        <service
+            android:name=".service.ScreenManagerService"
+            android:enabled="true"
+            android:exported="false"/>
+
         <!-- Serviços de Controle de Orientação -->
         <service
             android:name=".containers.orientation_manager.OrientationService"
             android:enabled="true"
             android:exported="false"/>
-
 
         <!-- Broadcast Receiver para Detecção de Mudanças -->
         <receiver
